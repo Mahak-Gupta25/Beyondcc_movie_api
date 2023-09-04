@@ -7,7 +7,7 @@ from config import app
 def get_movies():
     return get_movies_service()
 
-@app.route('/api/search', methods=['GET'])
+@app.route('/api/movies', methods=['GET'])
 def search_movies():
     query_params = request.args.to_dict()
 
