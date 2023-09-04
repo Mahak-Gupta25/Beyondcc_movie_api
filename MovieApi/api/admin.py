@@ -28,14 +28,14 @@ def add_movie():
     data = request.get_json()
     return add_movie_service(data)
 
-@app.route('/api/edit/<int:movie_id>', methods=['PUT'])
+@app.route('/api/movies/<int:movie_id>', methods=['PUT'])
 @jwt_required()
 @admin_required
 def edit_movie(movie_id):
     data = request.get_json()
     return edit_movie_service(movie_id, data)
 
-@app.route('/api/delete/<int:movie_id>', methods=['DELETE'])
+@app.route('/api/movies/<int:movie_id>', methods=['DELETE'])
 @jwt_required()
 @admin_required
 def delete_movie(movie_id):
