@@ -59,7 +59,7 @@ To Search for Movies Based on Parameters:
 
 To Add a Movie:
 
-        Send a POST request to http://127.0.0.1:5000/api/add.
+        Send a POST request to http://127.0.0.1:5000/api/movies.
         
         Include the movie information in the request body as JSON.
         
@@ -67,7 +67,7 @@ To Add a Movie:
 
 To Edit a Movie:
     
-        Send a PUT request to http://127.0.0.1:5000/<movie_id>.
+        Send a PUT request to http://127.0.0.1:5000/api/movies/<movie_id>.
         
         Include the updated movie information in the request body as JSON.
         
@@ -75,7 +75,7 @@ To Edit a Movie:
 
 To Delete a Movie:
 
-        Send a DELETE request to http://127.0.0.1:5000/<movie_id>.
+        Send a DELETE request to http://127.0.0.1:5000/api/movies/<movie_id>.
         
         Add an authentication header in the format: Authorization: Bearer your_access_token.
 
