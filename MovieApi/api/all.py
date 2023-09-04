@@ -11,8 +11,8 @@ def get_movies():
 def search_movies():
     query_params = request.args.to_dict()
 
-    genre = query_params.pop('genre', None)  # Pop 'genre' with default value None
-    name = query_params.pop('name', None)    # Pop 'name' with default value None
-    director = query_params.pop('director', None)    # Pop 'name' with default value None
+    genre = query_params.pop('genre', None)  
+    name = query_params.pop('name', None)    
+    director = query_params.pop('director', None)    
 
     return search_movies_service(genre, name, director, query_params)
